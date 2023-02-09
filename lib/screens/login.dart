@@ -1,60 +1,24 @@
+//import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import 'package:proyecto_dam/generated/l10n.dart';
 
 class Login extends StatelessWidget{
   const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(      
-      //resizeToAvoidBottomInset: false,
-      backgroundColor: const Color(0xff8d886f),
-      body: SingleChildScrollView(       
-         child: Column(
-            children: const <Widget>[
-              Foto(),
-              CorreoElectronico(),
-              Contrasena(),
-              Boton(),
-            ],
-          ),
-      ),
-    );
-  }
-}
-/*.................
-
-Foto
-
-''''''''''''''''''*/
-class Foto extends StatelessWidget {
-  const Foto({
-    Key? key,
-  }) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(top: 50, left: 8, right: 8),
-      child: const Image(image: AssetImage('assets/CanariasLuxury2Sombra.png')),
-    );
-  }
-}
-/*.................
-
-CorreoElectronico
-
-''''''''''''''''''*/
-class CorreoElectronico extends StatelessWidget {
-  const CorreoElectronico({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(top: 50, left: 50, right: 50),
-      child: const TextField(
-        decoration: InputDecoration(
-          hintText: "Correo electrónico",
+    return SafeArea(
+      child: Scaffold( 
+        backgroundColor: const Color(0xffffffff),
+        body: SingleChildScrollView(       
+           child: Column( 
+              children: const <Widget>[
+                Cabecera(),
+                CodigoUsuarioio(),
+                Boton(),
+              ],
+            ),
         ),
       ),
     );
@@ -62,21 +26,42 @@ class CorreoElectronico extends StatelessWidget {
 }
 /*.................
 
-contrasena
+Cabecera
 
 ''''''''''''''''''*/
-class Contrasena extends StatelessWidget {
-  const Contrasena({
+class Cabecera  extends StatelessWidget {
+  const Cabecera ({
+    Key? key,
+  }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(top: 50, left: 50, right: 50),
+      child: const Image(image: AssetImage('assets/CanariasLuxury.png')),
+    );
+  }
+}
+/*.................
+
+CodigoCodigoUsuarioioio
+
+''''''''''''''''''*/
+class CodigoUsuarioio extends StatelessWidget {
+  const CodigoUsuarioio({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 20, left: 50, right: 50),
-      child: const TextField(
+      margin: const EdgeInsets.only(top: 50, left: 50, right: 50),
+      child:  TextField(        
+        style: const TextStyle(
+          fontFamily: 'MulishM',
+        ),
+        keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
-          hintText: "Contraseña",
+          hintText: S.current.codigoUsuario,
         ),
       ),
     );
@@ -99,15 +84,16 @@ class Boton extends StatelessWidget {
       margin: const EdgeInsets.only(top: 50, left: 50, right: 50),                
       child: ElevatedButton(
         style:  ElevatedButton.styleFrom(   
-          padding: const EdgeInsets.symmetric(horizontal: 50),             
+          padding: const EdgeInsets.symmetric(horizontal: 50),            
             textStyle: const TextStyle(
-            fontSize: 18,
-            color: Color.fromARGB(255, 15, 14, 5)),
-            foregroundColor: const Color(0xfffae15b),
-            backgroundColor: const Color(0xff212121),
-                                
+              fontSize: 18,
+              fontFamily: "MulishM",
+            ),
+            foregroundColor: const Color(0xffffffff),
+            backgroundColor: const Color(0xffac862e),
+                               
         ),                 
-        child: const Text('Entrar'),
+        child:  Text(S.current.entrar),
         onPressed: () {
 
         }
