@@ -1,4 +1,3 @@
-//import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_dam/generated/l10n.dart';
@@ -13,10 +12,11 @@ class Login extends StatelessWidget{
         backgroundColor: const Color(0xffffffff),
         body: SingleChildScrollView(       
            child: Column( 
-              children: const <Widget>[
-                Cabecera(),
-                CodigoUsuarioio(),
-                Boton(),
+              children: <Widget>[
+                const Cabecera(),
+                Container(height: MediaQuery.of(context).size.height * 0.1,),
+                const CodigoUsuarioio(),
+                const Boton(),
               ],
             ),
         ),

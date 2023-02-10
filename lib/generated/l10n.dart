@@ -69,6 +69,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Name`
+  String get nombreUsuario {
+    return Intl.message(
+      'Name',
+      name: 'nombreUsuario',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passport number`
+  String get numeropasaporte {
+    return Intl.message(
+      'Passport number',
+      name: 'numeropasaporte',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you want to receive promotions, insert your email`
+  String get textCorreoElec {
+    return Intl.message(
+      'If you want to receive promotions, insert your email',
+      name: 'textCorreoElec',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get correoElec {
+    return Intl.message(
+      'Email',
+      name: 'correoElec',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Form`
+  String get cuestionario {
+    return Intl.message(
+      'Form',
+      name: 'cuestionario',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get guardar {
+    return Intl.message(
+      'Save',
+      name: 'guardar',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,4 +1,12 @@
 {
     "entrar": "Entrar",
-    "codigoUsuario": "Código de usuario"
+    "codigoUsuario": "Código de usuario",
+    "nombreUsuario": "Nombre",
+    "numeropasaporte": "Número pasaporte",
+    "textCorreoElec": "Si desea recibir promociones inserte su correo electrónico",
+    "correoElec": "Correo electrónico",
+    "cuestionario": "Formulario",
+    "guardar": "Guardar"
+
+
 }

@@ -24,6 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "codigoUsuario":
             MessageLookupByLibrary.simpleMessage("Código de usuario"),
-        "entrar": MessageLookupByLibrary.simpleMessage("Entrar")
+        "correoElec":
+            MessageLookupByLibrary.simpleMessage("Correo electrónico"),
+        "cuestionario": MessageLookupByLibrary.simpleMessage("Formulario"),
+        "entrar": MessageLookupByLibrary.simpleMessage("Entrar"),
+        "guardar": MessageLookupByLibrary.simpleMessage("Guardar"),
+        "nombreUsuario": MessageLookupByLibrary.simpleMessage("Nombre"),
+        "numeropasaporte":
+            MessageLookupByLibrary.simpleMessage("Número pasaporte"),
+        "textCorreoElec": MessageLookupByLibrary.simpleMessage(
+            "Si desea recibir promociones inserte su correo electrónico")
       };
 }

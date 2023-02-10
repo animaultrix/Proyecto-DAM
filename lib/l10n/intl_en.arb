@@ -1,4 +1,10 @@
 {
     "entrar": "Login",
-    "codigoUsuario": "User code"
+    "codigoUsuario": "User code",
+    "nombreUsuario": "Name",
+    "numeropasaporte": "Passport number",
+    "textCorreoElec": "If you want to receive promotions, insert your email",
+    "correoElec": "Email",
+    "cuestionario": "Form",
+    "guardar": "Save"
 }
