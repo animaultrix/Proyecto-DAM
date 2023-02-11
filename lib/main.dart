@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       //home: Login(),
       //home: Menu(),
       //home: Cuestionario(),
-      initialRoute: 'cuestionario',
+      initialRoute: 'login',
       routes: {
         'login':( _ ) => const Login(),
         'cuestionario': ( _ ) => const Cuestionario(),

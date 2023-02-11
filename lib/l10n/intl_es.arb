@@ -6,7 +6,9 @@
     "textCorreoElec": "Si desea recibir promociones inserte su correo electrónico",
     "correoElec": "Correo electrónico",
     "cuestionario": "Formulario",
-    "guardar": "Guardar"
-
-
+    "guardar": "Guardar",
+    "miStancia": "Mí estancia",
+    "tienda": "Tienda",
+    "ocio": "Ocio",
+    "puntoInteres": "POI"
 }

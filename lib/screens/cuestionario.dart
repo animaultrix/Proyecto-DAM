@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_dam/generated/l10n.dart';
+import 'package:proyecto_dam/screens/menu.dart';
 
 class Cuestionario extends StatelessWidget {
 
@@ -48,11 +49,12 @@ class Texto extends StatelessWidget {
       margin: const EdgeInsets.only(top:30,left: 50,right: 50),
       child: Text(
         texto,
-        style:  TextStyle(
+        style: TextStyle(
          fontFamily: 'MulishM',
          color: const Color.fromARGB(255, 109, 109, 109), 
-         fontSize: tamano
+         fontSize: tamano,         
         ),
+        textAlign: TextAlign.justify,
       ),
     );
   }
@@ -147,7 +149,12 @@ class BotonGuardar extends StatelessWidget {
         ),                 
         child:  Text(texto),
         onPressed: () {
-
+          Navigator.push(
+              context, 
+              MaterialPageRoute(
+                builder: (context) => Menu()
+              )
+            );
         }
       )
     );

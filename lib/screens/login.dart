@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_dam/generated/l10n.dart';
+import 'package:proyecto_dam/screens/cuestionario.dart';
 
 class Login extends StatelessWidget{
   const Login({super.key});
@@ -14,6 +15,7 @@ class Login extends StatelessWidget{
            child: Column( 
               children: <Widget>[
                 const Cabecera(),
+                //Expanded(child: Container(color: Colors.red)),
                 Container(height: MediaQuery.of(context).size.height * 0.1,),
                 const CodigoUsuarioio(),
                 const Boton(),
@@ -95,7 +97,12 @@ class Boton extends StatelessWidget {
         ),                 
         child:  Text(S.current.entrar),
         onPressed: () {
-
+          Navigator.push(
+              context, 
+              MaterialPageRoute(
+                builder: (context) => Cuestionario( )
+              )
+            );
         }
       )
     );

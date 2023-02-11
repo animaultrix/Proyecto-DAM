@@ -29,10 +29,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "cuestionario": MessageLookupByLibrary.simpleMessage("Formulario"),
         "entrar": MessageLookupByLibrary.simpleMessage("Entrar"),
         "guardar": MessageLookupByLibrary.simpleMessage("Guardar"),
+        "miStancia": MessageLookupByLibrary.simpleMessage("Mí estancia"),
         "nombreUsuario": MessageLookupByLibrary.simpleMessage("Nombre"),
         "numeropasaporte":
             MessageLookupByLibrary.simpleMessage("Número pasaporte"),
+        "ocio": MessageLookupByLibrary.simpleMessage("Ocio"),
+        "puntoInteres": MessageLookupByLibrary.simpleMessage("POI"),
         "textCorreoElec": MessageLookupByLibrary.simpleMessage(
-            "Si desea recibir promociones inserte su correo electrónico")
+            "Si desea recibir promociones inserte su correo electrónico"),
+        "tienda": MessageLookupByLibrary.simpleMessage("Tienda")
       };
 }

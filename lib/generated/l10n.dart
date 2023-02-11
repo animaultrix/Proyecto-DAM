@@ -129,6 +129,46 @@ class S {
       args: [],
     );
   }
+
+  /// `My stance`
+  String get miStancia {
+    return Intl.message(
+      'My stance',
+      name: 'miStancia',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Store`
+  String get tienda {
+    return Intl.message(
+      'Store',
+      name: 'tienda',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Leisure`
+  String get ocio {
+    return Intl.message(
+      'Leisure',
+      name: 'ocio',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `POI`
+  String get puntoInteres {
+    return Intl.message(
+      'POI',
+      name: 'puntoInteres',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

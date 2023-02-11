@@ -6,5 +6,9 @@
     "textCorreoElec": "If you want to receive promotions, insert your email",
     "correoElec": "Email",
     "cuestionario": "Form",
-    "guardar": "Save"
+    "guardar": "Save",
+    "miStancia": "My stance",
+    "tienda": "Store",
+    "ocio": "Leisure",
+    "puntoInteres": "POI"
 }
