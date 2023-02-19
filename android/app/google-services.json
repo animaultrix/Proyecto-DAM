@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279656815637",
+    "project_id": "canarias-luxury",
+    "storage_bucket": "canarias-luxury.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279656815637:android:6cdfa07e89e5d3d292c21c",
+        "android_client_info": {
+          "package_name": "com.example.proyecto_dam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279656815637-n3kfdonj7hffha7d0o1pu3an8k2ded9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1-AuJ2_O0r15Gjky7RAH-D3wcfmsp14U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279656815637-n3kfdonj7hffha7d0o1pu3an8k2ded9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

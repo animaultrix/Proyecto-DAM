@@ -18,7 +18,7 @@ class Login extends StatelessWidget{
                 //Expanded(child: Container(color: Colors.red)),
                 Container(height: MediaQuery.of(context).size.height * 0.1,),
                 const CodigoUsuarioio(),
-                const Boton(),
+                const Botonn(),
               ],
             ),
         ),
@@ -71,11 +71,11 @@ class CodigoUsuarioio extends StatelessWidget {
 }
 /*.................
 
-Boton
+Botonn
 
 ''''''''''''''''''*/
-class Boton extends StatelessWidget {
-  const Boton({
+class Botonn extends StatelessWidget {
+  const Botonn({
     Key? key,
   }) : super(key: key);
 
@@ -97,12 +97,13 @@ class Boton extends StatelessWidget {
         ),                 
         child:  Text(S.current.entrar),
         onPressed: () {
-          Navigator.push(
-              context, 
-              MaterialPageRoute(
-                builder: (context) => Cuestionario( )
-              )
-            );
+          //Navigator.push(
+          //    context, 
+          //    MaterialPageRoute(
+          //      builder: (context) => Cuestionario( )
+          //    )
+          //);
+          Navigator.pushNamed(context, '/cuestionario');
         }
       )
     );

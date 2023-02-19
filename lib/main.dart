@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:proyecto_dam/screens/cuestionario.dart';
-import 'package:proyecto_dam/screens/login.dart';
-import 'package:proyecto_dam/screens/menu.dart';
+//importaciones de los screens
+import 'package:proyecto_dam/screens/screens.dart';
+//importacion de multilenguaje
 import 'generated/l10n.dart';
-
-void main() {
+//importacion de firebase
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+Future<void> main() async {
+  //inicializar app
   runApp(const MyApp());
+  //inicializar firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );    
 }
 
 class MyApp extends StatelessWidget {
@@ -21,11 +27,12 @@ class MyApp extends StatelessWidget {
       //home: Login(),
       //home: Menu(),
       //home: Cuestionario(),
-      initialRoute: 'login',
+      initialRoute: '/login',
       routes: {
-        'login':( _ ) => const Login(),
-        'cuestionario': ( _ ) => const Cuestionario(),
-        'menu': ( _ ) => const Menu(),
+        '/login'       : ( BuildContext context ) => const Login(),
+        '/cuestionario': ( BuildContext context ) => const Cuestionario(),
+        '/menu'        : ( BuildContext context ) => const Menu(),
+        '/store'       : ( BuildContext context ) => const Store()
       },
       //Flutter IntL Internacionalización
       localizationsDelegates: const [
