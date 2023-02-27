@@ -80,10 +80,10 @@ class S {
     );
   }
 
-  /// `Passport number`
+  /// `Passport number or DNI`
   String get numeropasaporte {
     return Intl.message(
-      'Passport number',
+      'Passport number or DNI',
       name: 'numeropasaporte',
       desc: '',
       args: [],

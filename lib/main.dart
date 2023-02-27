@@ -8,12 +8,13 @@ import 'generated/l10n.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 Future<void> main() async {
-  //inicializar app
-  runApp(const MyApp());
+  // Inicializa el enlace de servicios de Flutter
+  WidgetsFlutterBinding.ensureInitialized();
   //inicializar firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  );    
+  ); //inicializar app
+  runApp(const MyApp());   
 }
 
 class MyApp extends StatelessWidget {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       //home: Cuestionario(),
       initialRoute: '/login',
       routes: {
-        '/login'       : ( BuildContext context ) => const Login(),
+        '/login'       : ( BuildContext context ) => Login(),
         '/cuestionario': ( BuildContext context ) => const Cuestionario(),
         '/menu'        : ( BuildContext context ) => const Menu(),
         '/store'       : ( BuildContext context ) => const Store()

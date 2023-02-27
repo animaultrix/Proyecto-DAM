@@ -2,7 +2,7 @@
     "entrar": "Login",
     "codigoUsuario": "User code",
     "nombreUsuario": "Name",
-    "numeropasaporte": "Passport number",
+    "numeropasaporte": "Passport number or DNI",
     "textCorreoElec": "If you want to receive promotions, insert your email",
     "correoElec": "Email",
     "cuestionario": "Form",

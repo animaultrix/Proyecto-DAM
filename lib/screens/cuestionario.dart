@@ -17,8 +17,8 @@ class Cuestionario extends StatelessWidget {
               Texto(texto: S.current.cuestionario,tamano: 18),
               CampoTexto(texto: S.current.nombreUsuario),
               CampoTexto(texto: S.current.numeropasaporte),
-              Texto(texto: S.current.textCorreoElec, tamano: 13),
-              CampoTextoCorreo(texto: S.current.correoElec),
+              //Texto(texto: S.current.textCorreoElec, tamano: 13),
+              //CampoTextoCorreo(texto: S.current.correoElec),
               BotonGuardar(texto: S.current.guardar)
             ],
           ),
@@ -94,7 +94,7 @@ class CampoTexto extends StatelessWidget {
 Campo texto correo
 
 ''''''''''''''''''*/
-class CampoTextoCorreo extends StatelessWidget {
+/*class CampoTextoCorreo extends StatelessWidget {
 
   final String texto;
 
@@ -117,7 +117,7 @@ class CampoTextoCorreo extends StatelessWidget {
       ),
     );
   }
-}
+}*/
 /*.................
 
 Boton Guardar

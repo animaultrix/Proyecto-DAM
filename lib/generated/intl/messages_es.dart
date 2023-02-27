@@ -32,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "miStancia": MessageLookupByLibrary.simpleMessage("Mí estancia"),
         "nombreUsuario": MessageLookupByLibrary.simpleMessage("Nombre"),
         "numeropasaporte":
-            MessageLookupByLibrary.simpleMessage("Número pasaporte"),
+            MessageLookupByLibrary.simpleMessage("Número pasaporte o DNI"),
         "ocio": MessageLookupByLibrary.simpleMessage("Ocio"),
         "puntoInteres": MessageLookupByLibrary.simpleMessage("POI"),
         "textCorreoElec": MessageLookupByLibrary.simpleMessage(

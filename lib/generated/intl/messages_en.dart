@@ -30,7 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "miStancia": MessageLookupByLibrary.simpleMessage("My stance"),
         "nombreUsuario": MessageLookupByLibrary.simpleMessage("Name"),
         "numeropasaporte":
-            MessageLookupByLibrary.simpleMessage("Passport number"),
+            MessageLookupByLibrary.simpleMessage("Passport number or DNI"),
         "ocio": MessageLookupByLibrary.simpleMessage("Leisure"),
         "puntoInteres": MessageLookupByLibrary.simpleMessage("POI"),
         "textCorreoElec": MessageLookupByLibrary.simpleMessage(
