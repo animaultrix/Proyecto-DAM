@@ -109,7 +109,7 @@ class Login extends StatelessWidget{
                       
                       ''''''''''''''''''*/
                       if (fechaCanarias.isBefore(fechaCliente) ) {
-                        Navigator.pushNamed(context, '/cuestionario');
+                        Navigator.restorablePushReplacementNamed(context, '/cuestionario');
                       } else {
                         
                       }

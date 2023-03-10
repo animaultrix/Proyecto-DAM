@@ -3,7 +3,7 @@ import 'package:proyecto_dam/data/data_item.dart';
 
 import 'package:proyecto_dam/generated/l10n.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:proyecto_dam/model/model_carrusel.dart';
+import 'package:proyecto_dam/models/model_carrusel.dart';
 import 'package:proyecto_dam/screens/item.dart';
 
 class Menu extends StatefulWidget {

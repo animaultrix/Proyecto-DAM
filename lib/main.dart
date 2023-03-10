@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:proyecto_dam/router/app_routes.dart';
 //importaciones de los screens
 import 'package:proyecto_dam/screens/screens.dart';
 //importacion de multilenguaje
@@ -25,16 +26,11 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       
       debugShowCheckedModeBanner: false,
-      //home: Login(),
-      //home: Menu(),
-      //home: Cuestionario(),
-      initialRoute: '/login',
-      routes: {
-        '/login'       : ( BuildContext context ) => Login(),
-        '/cuestionario': ( BuildContext context ) => const Cuestionario(),
-        '/menu'        : ( BuildContext context ) => const Menu(),
-        '/store'       : ( BuildContext context ) => const Store()
-      },
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.routes,
+      //onGenerateRoute:(settings) => AppRoutes.onGenerateRoute(settings),
+      //se puede simplificar por que settings es el unico argumento que enviamos
+      onGenerateRoute: AppRoutes.onGenerateRoute,
       //Flutter IntL Internacionalización
       localizationsDelegates: const [
       S.delegate,

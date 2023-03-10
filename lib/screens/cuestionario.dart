@@ -149,7 +149,7 @@ class BotonGuardar extends StatelessWidget {
         ),                 
         child:  Text(texto),
         onPressed: () {
-          Navigator.pushNamed(context, '/menu');
+          Navigator.pushReplacementNamed(context, '/menu');
         }
       )
     );

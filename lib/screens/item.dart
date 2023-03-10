@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_dam/model/model_carrusel.dart';
+import 'package:proyecto_dam/models/model_carrusel.dart';
 
 
 class Item extends StatelessWidget {
