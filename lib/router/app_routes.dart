@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_dam/models/models.dart';
+import 'package:proyecto_dam/screens/admin_viviendas.dart';
 import '../screens/screens.dart';
 
 
@@ -18,6 +19,7 @@ class AppRoutes {
     '/admin_tienda'           : ( BuildContext context ) => const AdminTienda(),
     '/admin_ocio'             : ( BuildContext context ) => const AdminOcio(),
     '/admin_empleado'         : ( BuildContext context ) => const AdminEmpleado(),
+    '/admin_viviendas'        : ( BuildContext context ) => const AdministrarViviendas(),
   };
   static Route<dynamic> onGenerateRoute (settings){
     print(settings);
@@ -30,5 +32,6 @@ class AppRoutes {
     MenuOptionAmin(route: '/admin_tienda', name: 'Administrar tienda', screen: const AdminTienda()),
     MenuOptionAmin(route: '/admin_ocio', name: 'Administrar Ocio', screen: const AdminOcio()),
     MenuOptionAmin(route: '/admin_empleado', name: 'Administrar empleado', screen: const AdminEmpleado()),
+    MenuOptionAmin(route: '/admin_viviendas', name: 'Administrar viviendas', screen: const AdministrarViviendas()),
   ];
 }

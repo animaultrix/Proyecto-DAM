@@ -8,6 +8,7 @@ class AdminTienda extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Administrar tienda')),
       body: Center(
         child: Text('administrar tienda'),
      ),

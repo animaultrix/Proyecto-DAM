@@ -8,6 +8,7 @@ class AdminEmpleado extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Administrar empleado')),
       body: Center(
         child: Text('Administrar empleado'),
      ),

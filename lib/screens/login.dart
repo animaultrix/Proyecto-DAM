@@ -32,10 +32,7 @@ class Login extends StatelessWidget{
                 Container(
                   margin: const EdgeInsets.only(top: 50, left: 50, right: 50),
                   child:  TextField(
-                    controller: code,      
-                    style: const TextStyle(
-                      fontFamily: 'MulishM',
-                    ),
+                    controller: code,
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
                       hintText: S.current.codigoUsuario,
@@ -50,17 +47,7 @@ class Login extends StatelessWidget{
                 Container(
                   width: double.infinity,
                   margin: const EdgeInsets.only(top: 50, left: 50, right: 50),                
-                  child: ElevatedButton(
-                    style:  ElevatedButton.styleFrom(   
-                      padding: const EdgeInsets.symmetric(horizontal: 50),            
-                        textStyle: const TextStyle(
-                          fontSize: 18,
-                          fontFamily: "MulishM",
-                        ),
-                        foregroundColor: const Color(0xffffffff),
-                        backgroundColor: const Color(0xffac862e),
-                                          
-                    ),                 
+                  child: ElevatedButton(                                    
                     child:  Text(S.current.entrar),
                     onPressed: () async {
                       documentoId = code.text;

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+//importacion de las rutas
 import 'package:proyecto_dam/router/app_routes.dart';
 //importaciones de los screens
 import 'package:proyecto_dam/screens/screens.dart';
+import 'package:proyecto_dam/theme/app_theme.dart';
 //importacion de multilenguaje
 import 'generated/l10n.dart';
 //importacion de firebase
@@ -31,6 +33,7 @@ class MyApp extends StatelessWidget {
       //onGenerateRoute:(settings) => AppRoutes.onGenerateRoute(settings),
       //se puede simplificar por que settings es el unico argumento que enviamos
       onGenerateRoute: AppRoutes.onGenerateRoute,
+      theme: AppTheme.lightTheme,
       //Flutter IntL Internacionalización
       localizationsDelegates: const [
       S.delegate,

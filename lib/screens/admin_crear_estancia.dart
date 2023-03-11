@@ -8,13 +8,7 @@ class CrearEstancia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: const Text('Administrador'),
-          elevation: 0,
-          foregroundColor: const Color(0xffffffff),
-          backgroundColor: const Color(0xffac862e), 
-         
-      ),
+      appBar: AppBar(title: const Text('Crear estancia')),
       body: Center(
         child: Text('Crear estancia'),
      ),

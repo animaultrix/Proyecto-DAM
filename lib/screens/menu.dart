@@ -83,16 +83,7 @@ class Boton extends StatelessWidget {
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 13, left: 50, right: 50),             
-      child: ElevatedButton(
-        style:  ElevatedButton.styleFrom(   
-          padding: const EdgeInsets.symmetric(horizontal: 50),            
-          textStyle: const TextStyle(
-            fontSize: 18,
-            fontFamily: "MulishM",
-          ),
-          foregroundColor: const Color(0xffffffff),
-          backgroundColor: const Color(0xffac862e),                               
-        ),                 
+      child: ElevatedButton(                 
         child:  Text(texto),
         onPressed: () {
 

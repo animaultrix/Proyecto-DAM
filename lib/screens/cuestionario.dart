@@ -50,7 +50,6 @@ class Texto extends StatelessWidget {
       child: Text(
         texto,
         style: TextStyle(
-         fontFamily: 'MulishM',
          color: const Color.fromARGB(255, 109, 109, 109), 
          fontSize: tamano,         
         ),
@@ -139,14 +138,7 @@ class BotonGuardar extends StatelessWidget {
       margin: const EdgeInsets.only(top: 50, left: 50, right: 50),                
       child: ElevatedButton(
         style:  ElevatedButton.styleFrom(   
-          padding: const EdgeInsets.symmetric(horizontal: 50),            
-          textStyle: const TextStyle(
-            fontSize: 18,
-            fontFamily: "MulishM",
-          ),
-          foregroundColor: const Color(0xffffffff),
-          backgroundColor: const Color(0xffac862e),                              
-        ),                 
+          padding: const EdgeInsets.symmetric(horizontal: 50),),                 
         child:  Text(texto),
         onPressed: () {
           Navigator.pushReplacementNamed(context, '/menu');
